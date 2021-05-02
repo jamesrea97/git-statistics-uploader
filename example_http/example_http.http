@@ -1,0 +1,7 @@
+
+
+###
+@git_user = 'jamesrea97'
+
+GET https://127.0.0.1:8000/stats/{{git_user}} HTTP/1.1
+###
