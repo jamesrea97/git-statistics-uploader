@@ -1,10 +1,11 @@
 """sThis module contains Kafka handling logic"""
-from typing import Any
 import json
 from kafka import KafkaProducer
 
+from event_objects import RequestEvent
 
-async def publish(bootstrap_servers: str, topic: str, value: dict[str, Any]):
+
+async def publish(bootstrap_servers: str, topic: str, value: RequestEvent):
     producer = KafkaProducer(bootstrap_servers=bootstrap_servers,
                              value_serializer=lambda v: json.dumps(v).encode('utf-8'))
-    producer.send(topic=topic, value=value)
+    return producer.send(topic=topic, value=str(value))

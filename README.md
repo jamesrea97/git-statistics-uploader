@@ -48,3 +48,8 @@ Check topic status
 ```
 bin/kafka-topics.sh --describe --topic topic-name--bootstrap-server localhost:9092
 ```
+
+View topics
+```sh
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topic-name --from-beginning
+```
