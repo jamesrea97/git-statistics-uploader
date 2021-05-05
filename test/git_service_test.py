@@ -6,7 +6,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 from aiohttp.tracing import TraceRequestEndParams
 from dotenv import load_dotenv
 
-from git_service import GitStatitisicsUploader
+from git_uploader import GitStatitisicsUploader
 from event_objects import ServicStatus
 
 load_dotenv('.env')

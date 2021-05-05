@@ -2,7 +2,7 @@
 from sanic import Sanic
 from sanic.response import json
 
-from git_service import GitStatitisicsUploader
+from git_uploader import GitStatitisicsUploader
 
 app = Sanic(__name__)
 
