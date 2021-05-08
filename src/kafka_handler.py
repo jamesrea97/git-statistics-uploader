@@ -1,4 +1,4 @@
-"""sThis module contains Kafka handling logic"""
+"""This module contains Kafka handling logic"""
 import json
 from kafka import KafkaProducer
 

@@ -46,10 +46,24 @@ bin/kafka-topics.sh --create --topic topic-name --bootstrap-server localhost:909
 ```
 Check topic status
 ```
-bin/kafka-topics.sh --describe --topic topic-name--bootstrap-server localhost:9092
+bin/kafka-topics.sh --describe --topic git-uploaded --bootstrap-server localhost:9092
 ```
 
+Create a Consumer Group
+```
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic git-uploaded --from-beginning --group git-uploaded-cg
+```
+List Consumer Groups
+```
+bin/kafka-consumer-groups.sh  --list --bootstrap-server localhost:9092
+```
 View topics
 ```sh
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topic-name --from-beginning
+```
+
+Get number of messages in a topic
+```
+bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list localhost:9092 --topic git-uploaded --time -1
+
 ```
