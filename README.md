@@ -40,6 +40,15 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 bin/kafka-server-start.sh config/server.properties
 ```
 
+Create service consumers
+```sh
+# Create Topic & Consumer Group
+bin/kafka-topics.sh --create --topic repo-uploaded --bootstrap-server localhost:9092
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic repo-uploaded --from-beginning --group repo-uploaded-cg
+
+```
+## General Kafka Notes
+
 Creating a topic
 ```sh
 bin/kafka-topics.sh --create --topic topic-name --bootstrap-server localhost:9092
@@ -48,6 +57,7 @@ Check topic status
 ```
 bin/kafka-topics.sh --describe --topic git-uploaded --bootstrap-server localhost:9092
 ```
+bin/kafka-topics.sh --describe --topic repo-uploaded --bootstrap-server localhost:9092
 
 Create a Consumer Group
 ```
@@ -65,5 +75,11 @@ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topic-na
 Get number of messages in a topic
 ```
 bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list localhost:9092 --topic git-uploaded --time -1
+
+```
+
+Delete Topic
+```
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic git-uploaded --delete
 
 ```

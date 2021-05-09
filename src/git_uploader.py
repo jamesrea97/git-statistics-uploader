@@ -7,16 +7,17 @@ from urllib.parse import urljoin
 
 import http_request as http_request
 import kafka_handler as kafka_handler
-from event_objects import ServicStatus, ServiceResponse, RequestEvent
+from event_objects import ServicStatus, ServiceResponse, Event
 
 
 class GitStatitisicsUploader:
     def __init__(self):
         self.git_url = os.getenv("GIT_BASE_URL")
-        self.kafka_producer_endpoint = os.getenv("KAFKA_PRODUCER_ENDPOINT")
-        self.kafka_topic = os.getenv("KAFKA_TOPIC")
+        self.kafka_endpoint = os.getenv("KAFKA_ENDPOINT")
+        self.kafka_repo_uploaded_topic = os.getenv("KAFKA_REPO_UPLOADED_TOPIC")
 
     async def get_statistics(self, git_user: str) -> ServiceResponse:
+        # TODO handle different git events
 
         repo = f'users/{git_user}/repos'
 
@@ -25,14 +26,14 @@ class GitStatitisicsUploader:
         res = await http_request.get(url)
 
         if res.status == 200:
-            event = RequestEvent(id_=uuid.uuid4(),
+            event = Event(id_=uuid.uuid4(),
                                  timestamp=datetime.utcnow(),
-                                 topic=self.kafka_topic,
-                                 load=res.response)
+                                 topic=self.kafka_repo_uploaded_topic,
+                                 str_load=res.response)
 
-            kafka_res = await kafka_handler.publish(self.kafka_producer_endpoint,
-                                                    self.kafka_topic,
-                                                    event)
+            kafka_res = await kafka_handler.publish(self.kafka_endpoint,
+                                                    self.kafka_repo_uploaded_topic,
+                                                    event.to_json())
 
             if kafka_res.exception is None and kafka_res.is_done:
                 return ServiceResponse(http_code=200,
@@ -51,5 +52,4 @@ class GitStatitisicsUploader:
                                    parameter=git_user)
 
 
-async def get_health(self):
-    pass
+# TODO health system of the kafka queue and git website
