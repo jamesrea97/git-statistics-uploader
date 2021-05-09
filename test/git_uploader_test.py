@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 import context
 from git_uploader import GitStatitisicsUploader
-from event_objects import ServicStatus
+from rest_objects import ServicStatus
 
 load_dotenv('.env')
 

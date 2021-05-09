@@ -7,7 +7,8 @@ from urllib.parse import urljoin
 
 import http_request as http_request
 import kafka_handler as kafka_handler
-from event_objects import ServicStatus, ServiceResponse, Event
+from rest_objects import ServicStatus, ServiceResponse
+from event import Event
 
 
 class GitStatitisicsUploader:
@@ -27,9 +28,9 @@ class GitStatitisicsUploader:
 
         if res.status == 200:
             event = Event(id_=uuid.uuid4(),
-                                 timestamp=datetime.utcnow(),
-                                 topic=self.kafka_repo_uploaded_topic,
-                                 str_load=res.response)
+                          timestamp=datetime.utcnow(),
+                          topic=self.kafka_repo_uploaded_topic,
+                          str_load=res.response)
 
             kafka_res = await kafka_handler.publish(self.kafka_endpoint,
                                                     self.kafka_repo_uploaded_topic,
