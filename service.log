@@ -1,0 +1,85 @@
+05/16/2021 10:00:10 AM git-sanitizer Goin' Fast @ http://127.0.0.1:8000
+05/16/2021 10:00:10 AM git-sanitizer Starting worker [26716]
+05/16/2021 10:01:15 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+05/16/2021 10:01:15 AM git-sanitizer Probing node bootstrap-0 broker version
+05/16/2021 10:01:15 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+05/16/2021 10:01:15 AM git-sanitizer Broker version identified as 2.5.0
+05/16/2021 10:01:15 AM git-sanitizer Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+05/16/2021 10:01:15 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: connecting to jfgr-TUXEDO:9092 [('127.0.1.1', 9092) IPv4]
+05/16/2021 10:01:15 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: Connection complete.
+05/16/2021 10:01:15 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+05/16/2021 10:01:15 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connected> [IPv4 ('127.0.1.1', 9092)]>: Closing connection. 
+05/16/2021 10:01:26 AM git-sanitizer 
+05/16/2021 10:01:42 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+05/16/2021 10:01:42 AM git-sanitizer Probing node bootstrap-0 broker version
+05/16/2021 10:01:42 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+05/16/2021 10:01:42 AM git-sanitizer Broker version identified as 2.5.0
+05/16/2021 10:01:42 AM git-sanitizer Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+05/16/2021 10:01:42 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: connecting to jfgr-TUXEDO:9092 [('127.0.1.1', 9092) IPv4]
+05/16/2021 10:01:42 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: Connection complete.
+05/16/2021 10:01:42 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+05/16/2021 10:01:42 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connected> [IPv4 ('127.0.1.1', 9092)]>: Closing connection. 
+05/16/2021 10:01:42 AM git-sanitizer 
+05/16/2021 10:01:42 AM git-sanitizer 
+05/16/2021 10:02:35 AM git-sanitizer 
+05/16/2021 10:03:12 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+05/16/2021 10:03:12 AM git-sanitizer Probing node bootstrap-0 broker version
+05/16/2021 10:03:12 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+05/16/2021 10:03:12 AM git-sanitizer Broker version identified as 2.5.0
+05/16/2021 10:03:12 AM git-sanitizer Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+05/16/2021 10:03:12 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: connecting to jfgr-TUXEDO:9092 [('127.0.1.1', 9092) IPv4]
+05/16/2021 10:03:12 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: Connection complete.
+05/16/2021 10:03:12 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+05/16/2021 10:03:12 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connected> [IPv4 ('127.0.1.1', 9092)]>: Closing connection. 
+05/16/2021 10:03:12 AM git-sanitizer 
+05/16/2021 10:03:57 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+05/16/2021 10:03:57 AM git-sanitizer Probing node bootstrap-0 broker version
+05/16/2021 10:03:57 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+05/16/2021 10:03:57 AM git-sanitizer Broker version identified as 2.5.0
+05/16/2021 10:03:57 AM git-sanitizer Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+05/16/2021 10:03:57 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: connecting to jfgr-TUXEDO:9092 [('127.0.1.1', 9092) IPv4]
+05/16/2021 10:03:57 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: Connection complete.
+05/16/2021 10:03:57 AM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+05/16/2021 10:03:57 AM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connected> [IPv4 ('127.0.1.1', 9092)]>: Closing connection. 
+05/16/2021 10:03:57 AM git-sanitizer 
+05/16/2021 10:04:57 AM git-sanitizer 
+07/31/2021 06:15:39 PM git-sanitizer Goin' Fast @ http://127.0.0.1:8000
+07/31/2021 06:15:39 PM git-sanitizer Starting worker [52848]
+07/31/2021 06:16:24 PM git-sanitizer Exception occurred while handling uri: 'http://127.0.0.1:8000/health'
+Traceback (most recent call last):
+  File "/home/jfgr/Projects/git-stat/git-statistics/git-statistics-uploader/venv/lib/python3.9/site-packages/sanic/app.py", line 724, in handle_request
+    response = await response
+  File "/home/jfgr/Projects/git-stat/git-statistics/git-statistics-uploader/src/rest_interface.py", line 19, in health
+    resp = await git_uploader.get_healh()
+AttributeError: 'GitStatitisicsUploader' object has no attribute 'get_healh'
+07/31/2021 06:16:24 PM git-sanitizer 
+07/31/2021 06:16:43 PM git-sanitizer Goin' Fast @ http://127.0.0.1:8000
+07/31/2021 06:16:43 PM git-sanitizer Starting worker [53088]
+07/31/2021 06:17:20 PM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+07/31/2021 06:17:20 PM git-sanitizer Probing node bootstrap-0 broker version
+07/31/2021 06:17:20 PM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+07/31/2021 06:17:20 PM git-sanitizer Broker version identified as 2.5.0
+07/31/2021 06:17:20 PM git-sanitizer Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+07/31/2021 06:17:26 PM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: connecting to jfgr-TUXEDO:9092 [('127.0.1.1', 9092) IPv4]
+07/31/2021 06:17:26 PM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connecting> [IPv4 ('127.0.1.1', 9092)]>: Connection complete.
+07/31/2021 06:17:26 PM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+07/31/2021 06:17:31 PM git-sanitizer <BrokerConnection node_id=0 host=jfgr-TUXEDO:9092 <connected> [IPv4 ('127.0.1.1', 9092)]>: Closing connection. 
+07/31/2021 06:17:42 PM git-sanitizer Exception occurred while handling uri: 'http://127.0.0.1:8000/health'
+Traceback (most recent call last):
+  File "/home/jfgr/Projects/git-stat/git-statistics/git-statistics-uploader/venv/lib/python3.9/site-packages/sanic/app.py", line 724, in handle_request
+    response = await response
+  File "/home/jfgr/Projects/git-stat/git-statistics/git-statistics-uploader/src/rest_interface.py", line 20, in health
+    return json(resp.to_json())
+  File "/home/jfgr/Projects/git-stat/git-statistics/git-statistics-uploader/venv/lib/python3.9/site-packages/sanic/response.py", line 270, in json
+    dumps(body, **kwargs),
+TypeError: <ConnectionStatus.OK: 'OK'> is not JSON serializable
+07/31/2021 06:17:42 PM git-sanitizer 
+07/31/2021 06:19:19 PM git-sanitizer Goin' Fast @ http://127.0.0.1:8000
+07/31/2021 06:19:19 PM git-sanitizer Starting worker [53627]
+07/31/2021 06:19:26 PM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: connecting to localhost:9092 [('127.0.0.1', 9092) IPv4]
+07/31/2021 06:19:26 PM git-sanitizer Probing node bootstrap-0 broker version
+07/31/2021 06:19:26 PM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv4 ('127.0.0.1', 9092)]>: Connection complete.
+07/31/2021 06:19:26 PM git-sanitizer Broker version identified as 2.5.0
+07/31/2021 06:19:26 PM git-sanitizer Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+07/31/2021 06:19:26 PM git-sanitizer <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv4 ('127.0.0.1', 9092)]>: Closing connection. 
+07/31/2021 06:19:26 PM git-sanitizer 

@@ -2,7 +2,14 @@
 import json
 from kafka import KafkaProducer
 
+
 async def publish(bootstrap_servers: str, topic: str, value: dict[str, str]):
     producer = KafkaProducer(bootstrap_servers=bootstrap_servers,
                              value_serializer=lambda v: json.dumps(v).encode('utf-8'))
     return producer.send(topic=topic, value=value)
+
+
+async def get_partitions(bootstrap_servers: str, topic: str):
+    producer = KafkaProducer(bootstrap_servers=bootstrap_servers,
+                             value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+    return producer.partitions_for(topic)

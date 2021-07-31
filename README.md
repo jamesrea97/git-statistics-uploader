@@ -46,6 +46,8 @@ Create service consumers
 bin/kafka-topics.sh --create --topic repo-uploaded --bootstrap-server localhost:9092
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic repo-uploaded --from-beginning --group repo-uploaded-cg
 
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic repo-requested --from-beginning --group repo-requested-cg
+
 ```
 ## General Kafka Notes
 
